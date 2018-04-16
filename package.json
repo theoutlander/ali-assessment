@@ -9,7 +9,7 @@
     "test": "mocha test",
     "dev-react": "webpack -d --watch"
   },
-  "author": "You!",
+  "author": "Abdulhameed",
   "private": true,
   "license": "UNLICENSED",
   "dependencies": {

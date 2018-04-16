@@ -14,7 +14,9 @@ app.use(morgan);
 app.get('/:number',pokemonRouter);
 
 app.get('/', function (req, res) {
-	
+	res.send("hello server")
 });
-
+app.post('/',function(req,res){
+	console.log('reqqqqq',req.body)
+})
 module.exports = app;

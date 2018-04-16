@@ -1,4 +1,6 @@
 var Pokemon = require('./Pokemon');
+var bodyParser = require('body-parser');
+
 
 // Complete each of the following controller methods
 exports.createOne = function (req, res) {
@@ -15,6 +17,7 @@ exports.createOne = function (req, res) {
 };
 
 exports.retrieve = function (req, res) {
+	//console.log('retrive req',req.body)
 	Pokemon.
   find({
    'number':req.body.number
