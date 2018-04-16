@@ -49,7 +49,7 @@ We recommend [SimpleScreenRecorder](http://www.maartenbaert.be/simplescreenrecor
 
 * `npm install`
 * `npm start`
-* FILL ME IN WITH ADDTIONAL STEPS AS PART OF SUBMISSION PROCESS
+* `npm test`
 
 ## Requirements
 
@@ -76,12 +76,12 @@ Using the existing code provided in `server/`, follow the steps below to build o
 | /api/pokemon/:number |   DELETE  |    empty     | Delete Pokémon with matching `number` and respond with JSON of deleted Pokémon |
 
 
-- [ ] Connect Mongoose to your local Mongo database in `db/index.js`
-- [ ] Create a Pokémon model in `resources/pokemon/Pokemon.js` and register it with Mongoose as the `Pokemon` collection with the following properties:
-  - [ ] `number`, a unique number
-  - [ ] `name`, a unique string
-  - [ ] `types`, an array of strings
-  - [ ] `imageUrl`, a string
+- [ x] Connect Mongoose to your local Mongo database in `db/index.js`
+- [ x] Create a Pokémon model in `resources/pokemon/Pokemon.js` and register it with Mongoose as the `Pokemon` collection with the following properties:
+  - [x ] `number`, a unique number
+  - [ x] `name`, a unique string
+  - [ x] `types`, an array of strings
+  - [ x] `imageUrl`, a string
 - [ ] In `insertAllPokemon.js`, write a function that can populate your Mongo database with the 151 original Pokémon found in `data/pokemon.json`, then run the script/invoke the function so that the database is populated.
 - [ ] Complete the controller in `resources/pokemon/pokemonController.js` that interacts with your Pokémon model.
 - [ ] Create a router in `resources/pokemon/pokemonRouter.js` that utilizes each of your controller's methods. Be sure to handle errors appropriately!
