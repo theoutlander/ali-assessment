@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Starter from './components/starter.jsx';
+// import PokemonContainer from './components/pokemon.container';
 import $ from 'jquery';
+import PokemonContainer from './components/pokemon.container'
 
 
-const App = (props) => <Starter num={ props.number } />;
+const App = (props) => <PokemonContainer />;
 
-ReactDOM.render(<App number={ 10 }/>, document.getElementById('app'));
+ReactDOM.render(<App/>, document.getElementById('app'));
 
